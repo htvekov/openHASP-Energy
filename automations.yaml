@@ -1,0 +1,68 @@
+- id: energy_push_arc_change_house
+  alias: energy_push_arc_change_house
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.daily_solar_consumption_total
+    - sensor.daily_energy_import_total
+  action:
+  - service: mqtt.publish
+    data_template:
+      topic: hasp/wt32_01_plus/command/p1b32.angle
+      payload_template: >
+        {% set i = states('sensor.daily_energy_import_total') | float(default=0.001) + 0.001 %}
+        {% set c = states('sensor.daily_solar_consumption_total') | float(default=0.001) + 0.001 %}
+        {% set a = (1 / ((i + c) / c) * 360) | int %}
+        {% if a > 355 %}
+          {{ 355 }}
+        {% elif a < 5 or c == 0.001 %}
+          {{ 5 }}
+        {% else %}
+          {{ a }}
+        {% endif %}
+
+- id: energy_push_arc_change_yield
+  alias: energy_push_arc_change_yield
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.energy_production_today
+    - sensor.solar_daily_yield
+  action:
+  - service: mqtt.publish
+    data_template:
+      topic: hasp/wt32_01_plus/command/p1b30.angle
+      payload_template: >
+        {% set f = states('sensor.energy_production_today') | float(default=0.001) + 0.001 %}
+        {% set y = (states('sensor.solar_daily_yield') | float(default=0.001) + 0.001) / 1000 %}
+        {% set a = (1 / (f / y) * 360) | int %}
+        {% if a > 355 %}
+          {{ 355 }}
+        {% elif a < 5 or y == 0.001 %}
+          {{ 5 }}
+        {% else %}
+          {{ a }}
+        {% endif %}
+
+- id: energy_push_arc_change_grid
+  alias: energy_push_arc_change_grid
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.daily_energy_import_total
+    - sensor.daily_energy_export_total
+  action:
+  - service: mqtt.publish
+    data_template:
+      topic: hasp/wt32_01_plus/command/p1b31.angle
+      payload_template: >
+        {% set i = states('sensor.daily_energy_import_total') | float(default=0.001) + 0.001 %}
+        {% set e = states('sensor.daily_energy_export_total') | float(default=0.001) + 0.001 %}
+        {% set a = (1 / ((i + e) / e) * 360) | int %}
+        {% if a > 355 %}
+          {{ 355 }}
+        {% elif a < 5 or e == 0.001 %}
+          {{ 5 }}
+        {% else %}
+          {{ a }}
+        {% endif %}
