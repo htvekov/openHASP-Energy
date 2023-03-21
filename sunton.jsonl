@@ -1,0 +1,35 @@
+{"page":0,"comment":"---------- All Pages ----------"}
+{"id":24,"action":{"down":"page 6"},"obj":"btn","x":000,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ued3e","text_color":"#978B7D","text_font":64}
+{"id":25,"action":{"down":"page 1"},"obj":"btn","x":115,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ufa74","text_color":"#978B7D","text_font":64}
+{"id":01,"action":{"down":"page prev"},"obj":"btn","x":230,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ue141","text_color":"#978B7D","text_font":64}
+{"id":02,"action":{"down":"page back"},"obj":"btn","x":345,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ue2dc","text_color":"#978B7D","text_font":64}
+{"id":03,"action":{"down":"page next"},"obj":"btn","x":460,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ue142","text_color":"#978B7D","text_font":64}
+{"id":26,"action":{"down":"page 2"},"obj":"btn","x":575,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ue4c3","text_color":"#978B7D","text_font":64}
+{"id":27,"action":{"down":"page 4"},"obj":"btn","x":690,"y":400,"w":110,"h":80,"bg_opa":180,"bg_color":"#000000","border_color":"#C7BAA7","border_width":2,"radius":10,"radius1":10,"radius2":10,"text":"\ue595","text_color":"#978B7D","text_font":64}
+
+{"id":04,"obj":"roller","enabled":false,"click":false,"x":0,"y":-1,"w":800,"text_line_space":10,"bg_opa1":180,"bg_opa2":0,"border_width1":0,"val":0,"rows":1,"options":"ENERGY\nSONOS\nOFFICE\nWEATHER\nFAMILY\nNORDPOOL","text_font":24,"bg_color1":"#000000","text_color1":"#FFFFFF","bg_color":"#000000","text_color":"#000000","border_side":0,"radius":0}
+{"id":05,"obj":"label","enabled":false,"x":707,"y":5,"h":30,"w":90,"bg_opa":0,"text":"00.0°C","align":"right","bg_color":"#2C3E50","text_color":"#FFFFFF","text_font":24}
+{"id":06,"obj":"label","enabled":false,"x":50,"y":5,"w":250,"h":30,"bg_opa":0,"text":"00:00:00","template":"%H:%M:%S  %b %e, %Y","bg_color":"#2C3E50","text_color":"white","align":"left","text_font":24}
+{"id":07,"obj":"label","enabled":false,"x":05,"y":2,"w":30,"h":20,"bg_opa":0,"text":"\ue5a9","bg_color":"#2C3E50","text_color":"#FFFFFF","text_font":16}
+{"id":08,"obj":"label","enabled":false,"x":20,"y":2,"w":30,"h":20,"bg_opa":0,"text":"\ue004","bg_color":"#2C3E50","text_color":"green","text_font":16}
+
+
+{"page":1,"comment":"---------- Page 1 ----------"}
+{"page":1,"id":0,"prev":7}
+{"id":01,"obj":"img","enabled":true,"x":0,"y":0,"w":800,"h":480,"auto_size":0,"src":"L:/transmission_800x480.bin"}
+{"id":02,"obj":"gauge","min":0,"max":3000,"critical_value":3001,"bg_opa":180,"x":10,"y":50,"w":290,"h":290,"val":0,"value_str":"\ue599","value_ofs_y":50,"value_font":64,"bg_opa2":100,"line_rounded10":true,"line_color":"orange","line_color10":"orange","line_color60":"orange","scale_grad_color":"lime","scale_grad_color60":"lime","line_count":31,"text_font":24,"text_color":"white","pad_inner":30,"label_count":7}
+{"id":03,"obj":"gauge","min":-3000,"max":5000,"critical_value":3000,"bg_opa":180,"x":500,"y":50,"w":290,"h":290,"val":0,"value_str":"\ue6a1","value_ofs_y":50,"value_font":64,"bg_opa2":100,"line_rounded10":true,"line_color":"lime","line_color10":"orange","line_color60":"lime","scale_grad_color":"red","scale_grad_color60":"red","scale_end_color":"red","scale_end_color60":"red","line_count":33,"text_font":24,"text_color":"white","pad_inner":30,"label_count":9}
+{"id":04,"obj":"label","enabled":false,"x":570,"y":280,"h":50,"w":150,"text":"0 Wh","align":"center","bg_opa":0,"text_color":"white","text_font":40}
+{"id":05,"obj":"label","enabled":false,"x":080,"y":280,"h":50,"w":150,"text":"0 W","align":"center","bg_opa":0,"text_color":"white","text_font":40}
+
+{"id":20,"obj":"label","x":340,"y":050,"w":120,"h":40,"bg_color":"black","bg_opa":100,"align":"center","text_color":"white","border_width":0,"radius":10,"radius1":10,"radius2":10,"text":"2,50 dkk","text_font":32}
+
+{"id":40,"obj":"arc","x":265,"y":260,"w":130,"h":130,"min":0,"max":0,"val":0,"adjustable":0,"line_color":"lime","line_color10":"orange","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ufa74","value_color":"white","value_font":60,"value_ofs_y":-25}
+{"id":10,"obj":"label","x":265,"y":325,"w":130,"h":30,"bg_opa":0,"align":"center","text_color":"orange","border_width":0,"text":"20,6 kWh","text_font":28}
+
+{"id":41,"obj":"arc","x":325,"y":120,"w":150,"h":150,"max":0,"val":0,"adjustable":0,"line_color":"#00c0c0","line_color10":"indigo","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ued3e","value_color":"white","value_font":64,"value_ofs_y":-35}
+{"id":11,"obj":"label","x":325,"y":190,"w":150,"h":32,"bg_opa":0,"align":"center","text_color":"indigo","border_width":0,"text":"10,5 kWh","text_font":30}
+{"id":12,"obj":"label","x":325,"y":218,"w":150,"h":30,"bg_opa":0,"align":"center","text_color":"#00c0c0","border_width":0,"text":"17,7 kWh","text_font":24}
+
+{"id":42,"obj":"arc","x":405,"y":260,"w":130,"h":130,"min":0,"max":0,"val":0,"adjustable":0,"line_color":"#00c0c0","line_color10":"orange","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ue6a1","value_color":"white","value_font":64,"value_ofs_y":-25}
+{"id":13,"obj":"label","x":405,"y":325,"w":130,"h":30,"bg_opa":0,"align":"center","text_color":"white","border_width":0,"text":"33,4 kWh","text_font":28}
