@@ -1,5 +1,6 @@
 # openHASP-Energy
-PLate design revised 21-03-2023
+
+Plate design revised 21-03-2023
 Former three spinner objects was using all mcu power. So they've been replaced with arc objects instead
 Arc objects colouring determined by percentage of:
 - Daily solar yield/Predicted daily yield
