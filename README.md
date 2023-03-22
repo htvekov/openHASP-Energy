@@ -6,7 +6,7 @@ Former three spinner objects was using all mcu ressources and from time to time 
 
 Arc objects colouring determined by percentage of:
 - Daily solar yield / Predicted daily yield
-- Solar power own consumtion / Grid import
+- Solar power own consumption / Grid import
 - Export to grid / Import from grid
 
 Entire config done in configurations - no automations
