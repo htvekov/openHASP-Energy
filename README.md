@@ -11,7 +11,7 @@ Arc objects colouring determined by percentage of:
 
 Entire config done in configurations - no automations
 
-openHASP Custom Componenet mandatory
+openHASP Custom Component is mandatory
 
 480x480 pixels design to be updated
 
