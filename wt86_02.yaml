@@ -1,0 +1,56 @@
+wt86_02:
+    objects:
+      - obj: "p0b4"
+        properties:
+          "val": "{{states('openhasp.wt86_02') | int(0) -1}}"
+      - obj: "p0b5"
+        properties:
+          "text": "{% if states('sensor.outdoor_temperature') != 'unknown' %} {{ '%.1f' | format (states('sensor.outdoor_temperature') | round(1)) }}{{'\\u00b0'}}C {% else %} -.-{{'\\u00b0'}}C{% endif %}"
+      - obj: "p0b7"
+        properties:
+          "text_color": "{% if -50 <= state_attr('openhasp.wt86_02','rssi') | int(0) %}green{% elif -51 > state_attr('openhasp.wt86_02','rssi') | int(0) >= -60 %}olive{% elif -61 > state_attr('openhasp.wt86_02','rssi') | int(0) >= -70 %}orange{% elif -71 > state_attr('openhasp.wt86_02','rssi') |int (0) >= -80 %}maroon{% else %}red{% endif %}"
+    
+      - obj: "p1b2"
+        properties:
+          "value_str": >-
+              {% if states('binary_sensor.solivia_night_status') == 'on' %}{{'\ue594'}}{% else %}{{'\ue599'}}{% endif %}
+          "val": "{{ states('sensor.solar_ac_power') }}"
+      - obj: "p1b5"
+        properties:
+          "text": "{{ states('sensor.solar_ac_power') }} W"
+          "text_color": "{% if 500 > states('sensor.solar_ac_power') | int(0) %}red{% elif 1000 > states('sensor.solar_ac_power') | int(0) >= 500 %}orange{% elif 1500 > states('sensor.solar_ac_power') |int (0) >= 1000 %}yellow{% else %}green{% endif %}"
+      - obj: "p1b3"
+        properties:
+          "val": "{{ states('sensor.total_active_power') }}"
+      - obj: "p1b4"
+        properties:
+          "text": "{{ states('sensor.total_active_power') }} Wh"
+          "text_color": "{% if 0 > states('sensor.total_active_power') | int(0) %}green{% elif 750 > states('sensor.total_active_power') | int(0) >= 0 %}yellow{% elif 1500 > states('sensor.total_active_power') |int (0) >= 750 %}orange{% else %}red{% endif %}"
+      - obj: "p1b10"
+        properties:
+          "text": "{{ (states('sensor.solar_daily_yield') | float(0.001) / 1000) | round(1) }} kWh"
+      - obj: "p1b11"
+        properties:
+          "text": "\ue04d{{ states('sensor.daily_energy_export_total') | round(1) }} kWh"
+      - obj: "p1b12"
+        properties:
+          "text": "\ue054{{ states('sensor.daily_energy_import_total') | round(1) }} kWh"
+      - obj: "p1b13"
+        properties:
+          "text": "{{ (states('sensor.daily_energy_import_total') | float(0) + states('sensor.daily_solar_consumption_total') | float(0)) | round(1) }} kWh"
+      - obj: "p1b20"
+        properties:
+          "text": "{{ '%.2f' | format (states('sensor.nordpool_kwh_dk1_dkk_2_095_025') |round(2)) }} dkk"
+      - obj: "p1b40"
+        properties:
+          "max": "{{ states('sensor.energy_production_today') | float(0.001) * 1000 }}"
+          "val": "{{ states('sensor.solar_daily_yield') | int(0) }}"
+      - obj: "p1b41"
+        properties:
+          "max": "{{ (states('sensor.daily_energy_export_total') | float(0.001) * 1000 + states('sensor.daily_energy_import_total') | float(1) * 1000) | int(0) }}"
+          "val": "{{ (states('sensor.daily_energy_export_total') | float(0.001) * 1000) | int(0) }}"
+      - obj: "p1b42"
+        properties:
+          "max": "{{ (states('sensor.daily_energy_import_total') | float(0.001) * 1000 + states('sensor.daily_solar_consumption_total') | float *1000) | int(0) }}"
+          "val": "{{ (states('sensor.daily_solar_consumption_total') | float(0.001) * 1000) | int(0) }}"
+          
