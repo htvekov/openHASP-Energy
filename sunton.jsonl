@@ -12,7 +12,7 @@
 {"id":06,"obj":"label","enabled":false,"x":50,"y":5,"w":250,"h":30,"bg_opa":0,"text":"00:00:00","template":"%H:%M:%S  %b %e, %Y","bg_color":"#2C3E50","text_color":"white","align":"left","text_font":24}
 {"id":07,"obj":"label","enabled":false,"x":05,"y":2,"w":30,"h":20,"bg_opa":0,"text":"\ue5a9","bg_color":"#2C3E50","text_color":"#FFFFFF","text_font":16}
 {"id":08,"obj":"label","enabled":false,"x":20,"y":2,"w":30,"h":20,"bg_opa":0,"text":"\ue004","bg_color":"#2C3E50","text_color":"green","text_font":16}
-
+{"id":50,"obj":"img","x":680,"y":5,"src":"L:/z-32-sunny.png"}
 
 {"page":1,"comment":"---------- Page 1 ----------"}
 {"page":1,"id":0,"prev":7}
