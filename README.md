@@ -10,7 +10,8 @@ Arc objects colouring determined by percentage of:
 - Export to grid / Import from grid
 
 Entire config done in configurations - no automations
-Configuration examples for 480 x480 res. devices
+
+Configuration examples for 480x480 and 480x800 res. devices
 - [GS-T3E](https://github.com/HASwitchPlate/openHASP/discussions/383) or [WT32S3-86V](https://github.com/HASwitchPlate/openHASP/discussions/435) 
 - [Sunton devices](https://www.openhasp.com/0.7.0/hardware/sunton/esp32-8048s0xx/) with 480x800 res. displays
 openHASP Custom Component is mandatory
