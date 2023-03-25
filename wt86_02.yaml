@@ -12,6 +12,8 @@ wt86_02:
     
       - obj: "p1b2"
         properties:
+          "value_color": >
+            {% if states('binary_sensor.solivia_night_status') == 'on' %}#F0E68C{% else %}#FFFF00{% endif %}
           "value_str": >-
               {% if states('binary_sensor.solivia_night_status') == 'on' %}{{'\ue594'}}{% else %}{{'\ue599'}}{% endif %}
           "val": "{{ states('sensor.solar_ac_power') }}"
