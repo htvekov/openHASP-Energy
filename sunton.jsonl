@@ -27,8 +27,8 @@
 {"id":40,"obj":"arc","x":265,"y":260,"w":130,"h":130,"min":0,"max":0,"val":0,"adjustable":0,"line_color":"lime","line_color10":"orange","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ufa74","value_color":"white","value_font":60,"value_ofs_y":-25}
 {"id":10,"obj":"label","x":265,"y":325,"w":130,"h":30,"bg_opa":0,"align":"center","text_color":"orange","border_width":0,"text":"20,6 kWh","text_font":28}
 
-{"id":41,"obj":"arc","x":325,"y":120,"w":150,"h":150,"max":0,"val":0,"adjustable":0,"line_color":"#00c0c0","line_color10":"indigo","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ued3e","value_color":"white","value_font":64,"value_ofs_y":-35}
-{"id":11,"obj":"label","x":325,"y":190,"w":150,"h":32,"bg_opa":0,"align":"center","text_color":"indigo","border_width":0,"text":"10,5 kWh","text_font":30}
+{"id":41,"obj":"arc","x":325,"y":120,"w":150,"h":150,"max":0,"val":0,"adjustable":0,"line_color":"#00c0c0","line_color10":"magenta","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ued3e","value_color":"white","value_font":64,"value_ofs_y":-35}
+{"id":11,"obj":"label","x":325,"y":190,"w":150,"h":32,"bg_opa":0,"align":"center","text_color":"magenta","border_width":0,"text":"10,5 kWh","text_font":30}
 {"id":12,"obj":"label","x":325,"y":218,"w":150,"h":30,"bg_opa":0,"align":"center","text_color":"#00c0c0","border_width":0,"text":"17,7 kWh","text_font":24}
 
 {"id":42,"obj":"arc","x":405,"y":260,"w":130,"h":130,"min":0,"max":0,"val":0,"adjustable":0,"line_color":"#00c0c0","line_color10":"orange","line_width":5,"line_width10":5,"bg_opa":180,"border_width":0,"start_angle10":270,"end_angle10":269,"value_str":"\ue6a1","value_color":"white","value_font":64,"value_ofs_y":-25}
