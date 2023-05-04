@@ -14,7 +14,7 @@ Entire config done in configurations - no automations
 openHASP Custom Component is mandatory
 
 Configuration examples for 480x480 and 480x800 res. devices
-- [GS-T3E](https://github.com/HASwitchPlate/openHASP/discussions/383) or [WT32S3-86V](https://github.com/HASwitchPlate/openHASP/discussions/435) 
+- [GS-T3E](https://github.com/HASwitchPlate/openHASP/discussions/458) or [WT32S3-86V](https://github.com/HASwitchPlate/openHASP/discussions/435) 
 - [Sunton devices](https://www.openhasp.com/0.7.0/hardware/sunton/esp32-8048s0xx/) with 480x800 res. displays
 
 ![T3E openHASP Energy plate 480x480 res.](https://github.com/htvekov/openHASP-Energy/blob/main/T3E_energy_plate.png)
