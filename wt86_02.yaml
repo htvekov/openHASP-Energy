@@ -54,5 +54,5 @@ wt86_02:
           "val": "{{ (states('sensor.daily_energy_export_total') | float(0.001) * 1000) | int(0) }}"
       - obj: "p1b42"
         properties:
-          "max": "{{ (states('sensor.daily_energy_import_total') | float(0.001) * 1000 + states('sensor.daily_solar_consumption_total') | float *1000) | int(0) }}"
+          "max": "{{ (states('sensor.daily_energy_import_total') | float(0.001) * 1000 + states('sensor.daily_solar_consumption_total') | float(0) *1000) | int(0) }}"
           "val": "{{ (states('sensor.daily_solar_consumption_total') | float(0.001) * 1000) | int(0) }}"
